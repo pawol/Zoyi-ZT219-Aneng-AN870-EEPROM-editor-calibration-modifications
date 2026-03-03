@@ -24,6 +24,7 @@ It should be rather easy task to modify the source code to support any other `EE
 
 # Hardware improvements
 
+[Aneng AN870/Zoyi ZT219 schematic diagram](doc/Zoyi_zt219_Aneng_an870_v3.1_schematic.pdf)
 I suggest to introduce some hardware modifications.
 The most important is to replace existing transil 6,8V onto 5 diodes bridge to ensure better protection of 1 ohm/0.2W shunt in case of accidential connection of ammeter (200mA range)
 directly into 230 VAC socket. Transil is cheap and... nothing more. 6,8V makes that shunt resitor 1 ohm/0.2W has to bear 10x more power than in case of bridge.
@@ -32,15 +33,14 @@ The 5 diodes bridge (popular in the majority of multimeters) does not impact a m
 ![hardware mods](doc/bridge.png)
 ![hardware mods](doc/Aneng_AN870_mods.jpg)
 
+# How to recalibrate Zoyi ZT219 / Aneng AN870 properly
+
+[How to calibrate](doc/calibration.txt)
+
 # Datasheets of DMM chip DTM0660L (the clone of HY12P65)
-[Aneng AN870/Zoyi ZT219 schematic diagram](doc/Zoyi_zt219_Aneng_an870_v3.1_schematic.pdf)
 
 [datasheet 1](doc/DTM0660_datasheet.pdf)
 
 [datasheet 2](doc/DTM0660_datasheet_auto-translated.pdf)
 
 [datasheet 3](doc/DS-HY12P65_EN.pdf)
-
-[How to calibrate](doc/calibration.txt)
-
-
