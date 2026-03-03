@@ -27,9 +27,12 @@ It should be rather easy task to modify the source code to support any other `EE
 Look at teh original [Aneng AN870/Zoyi ZT219 schematic diagram](doc/Zoyi_zt219_Aneng_an870_v3.1_schematic.pdf)
 
 I suggest to introduce some hardware modifications.
-The most important is to replace existing transil 6,8V onto 5 diodes bridge to ensure better protection of 1 ohm/0.2W shunt in case of accidential connection of ammeter (200mA range)
-directly into 230 VAC socket. Transil is cheap and... nothing more. 6,8V makes that shunt resitor 1 ohm/0.2W has to bear 10x more power than in case of bridge.
-The 5 diodes bridge (popular in the majority of multimeters) does not impact a measurement precision on uA and mA range.  Capacitors improve readout stability.
+The most important is to add additional bridge of 5x diodes 1N4007 (or M7 diodes) pararelly to the existing transil 6,8V to ensure better protection of 1 ohm/0.2W
+shunt in case of accidential connection of ammeter (200mA range) directly into 230 VAC socket. 
+Transil is cheap and... nothing more. 6,8V makes that shunt resitor 1 ohm/0.2W has to bear 10x more power than in case of bridge.
+The bridge is "relief", TVS gets 2nd stage protection.
+The 5 diodes bridge (popular in the majority of multimeters) does not impact a measurement precision on uA and mA range at all.
+Capacitors improve readout stability.
 
 ![hardware mods](doc/bridge.png)
 ![hardware mods](doc/Aneng_AN870_mods.jpg)
