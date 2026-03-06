@@ -30,18 +30,24 @@ Look at the original
 ![Aneng AN870/Zoyi ZT219 schematic diagram](doc/Zoyi_zt219_Aneng_an870_v3.1_schematic.pdf)
 
 I suggest to introduce some hardware modifications.
-The most important is to add additional bridge of 5x diodes 1N4007 (or M7 diodes) pararelly to the existing transil 6,8V to ensure better protection of 1 ohm/0.2W
+
+1st modification is to add additional bridge of 5x diodes 1N4007 (or M7 diodes) pararelly to the existing transil 6,8V to ensure better protection of 1 ohm/0.2W
 shunt in case of accidential connection of ammeter (200mA range) directly into 230 VAC socket. 
 Transil is cheap and... nothing more. 6,8V makes that shunt resitor 1 ohm/0.2W has to bear 10x more power than in case of bridge.
-The bridge is first early stage "relief" and starts to work at 2V , TVS becomes 2nd stage protection.
+The bridge is first early stage "relief" and starts to work at 2V , TVS becomes 2nd stage 6,8V protection.
+The bridge is able to decrase pulse power on 1 Ohm (R24) shunt from 40 -> 4W
 The 5 diodes bridge (popular solution in the majority of multimeters) does not impact a measurement precision on uA and mA range at all.
+I plane to replace "middle" diode onto 1N5408 in the future (1x 1N5408 + 4x1N4007 bridge). My simulations tells me it will be more efficient.
+ 
 Additional capacitors improve readout stability.
-It is required also to improve measurement of ammeter on 20A range. There is bug in Kelvin connection originally.
+
+It is required also to improve measurement of ammeter on 20A range. There is bug on original PCB in Kelvin connection.
 Just cut one path and add second one properly and make main current pathes thicker.
-The main current path originally has 25% of resistance R33 shunt! 0,0025 mOhm versus 0,01 Ohm.
-The main current path originally is unstable part of R33 shunt!
-Voltage drop on that pathes is huge!
+The main current path has originally 25% of resistance R33 shunt! 0,0025 mOhm versus 0,01 Ohm.
+The main current path is originally significiant and unstable part of R33 shunt!
+Voltage drop on that pathes is huge! The high current readings drift on the 20 A range.
 Recalibration on 20A is necessary. This is quit easy task to do.
+
 Recalibration details are described below.
 
 ![hardware mods](doc/bridge.png)
