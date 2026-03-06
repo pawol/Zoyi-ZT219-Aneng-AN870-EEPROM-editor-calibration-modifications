@@ -56,7 +56,9 @@ We need to reprogram popular 24c02 eeprom, the clip is extremally comfortable to
 
 ![ch341 based programer](doc/ch341_programmer.jpg)
 
-# Datasheets of DMM chip DTM0660L (the clone of HY12P65)
+# Datasheets and documentation
+
+[Aneng AN870/Zoyi ZT219 schematic diagram](doc/Zoyi_zt219_Aneng_an870_v3.1_schematic.pdf)
 
 [datasheet 1](doc/DTM0660_datasheet.pdf)
 
