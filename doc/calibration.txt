@@ -19,11 +19,11 @@ Wybór co chcemy kalibrować:
 ----------------------------------------------
 Kalibracja napięcia (V) DC :
 - wybrać na selektorze napięcie (V) DC
-- podłaczyć do sond napięcie 100mV i nacisnąć HOLD aby miernik skalibrował się na tą wartość
-- podłaczyć do sond napięcie 1V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
-- podłaczyć do sond napięcie 10V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
-- podłaczyć do sond napięcie 100V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
-- podłaczyć do sond napięcie 1000V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+- podłączyć do sond napięcie 100mV i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+- podłączyć do sond napięcie 1V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+- podłączyć do sond napięcie 10V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+- podłączyć do sond napięcie 100V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+- podłączyć do sond napięcie 1000V i nacisnąć HOLD aby miernik skalibrował się na tą wartość
   
   zweryfikować inne odczyty napięć w podanych zakresach
   po kalibracji przełączyć selektor multimetra inną wielkość którą chcemy kalibrować (np. DC V, DC mA) lub  wyłaczyć multimetr i zdjąć zworkę JP2
