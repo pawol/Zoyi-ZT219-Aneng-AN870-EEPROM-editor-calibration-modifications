@@ -35,7 +35,9 @@ The 5 diodes bridge (popular solution in the majority of multimeters) does not i
 Additional capacitors improve readout stability.
 It is required also to improve measurement of ammeter on 20A range. There is bug in Kelvin connection originally.
 Just cut one path and add second one properly and make main current pathes thicker.
-The main current path originally has 25% of resistance R33 shunt! 0,0025 mOhm versus 0,01 Ohm . Voltage drop on that pathes is huge!
+The main current path originally has 25% of resistance R33 shunt! 0,0025 mOhm versus 0,01 Ohm.
+The main current path originally is unstable part of R33 shunt!
+Voltage drop on that pathes is huge!
 Recalibration on 20A is necessary. This is quit easy task to do.
 Recalibration details are described below.
 
