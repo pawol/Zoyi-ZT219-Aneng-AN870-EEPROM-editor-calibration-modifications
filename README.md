@@ -32,12 +32,14 @@ Look at the original
 I suggest to introduce some hardware modifications.
 
 1st modification is to add additional bridge of 5x diodes 1N4007 (or M7 diodes) pararelly to the existing transil 6,8V to ensure better protection of 1 ohm/0.2W
-shunt in case of accidential connection of ammeter (200mA range) directly into 230 VAC socket. 
+shunt in case of accidential connection of ammeter (200mA range) directly into 230V AC socket. 
 Transil is cheap and... nothing more. 6,8V makes that shunt resitor 1 ohm/0.2W has to bear 10x more power than in case of bridge.
 The bridge is first early stage "relief" and starts to work at 2V , TVS becomes 2nd stage 6,8V protection.
 The bridge is able to decrase pulse power on 1 Ohm (R24) shunt from 40 -> 4W
 The 5 diodes bridge (popular solution in the majority of multimeters) does not impact a measurement precision on uA and mA range at all.
 I plane to replace "middle" diode onto 1N5408 in the future (1x 1N5408 + 4x1N4007 bridge). My simulations tells me it will be more efficient.
+Of course the fuse 200mA i very imprtant part of protection circuit and has to be fast and ceramic.
+The rule of mensioned TVS / bridge is to blow fuse as soon as possible.
  
 Additional capacitors improve readout stability.
 
