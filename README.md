@@ -14,13 +14,15 @@ You can also use one [online eeprom editor](https://pawol.github.io/Zoyi-ZT219-A
 An example of dumped eeprom
 [eeprom dump file](doc/aneng_870_original_eeprom_dump.bin)
 
-# Inner workings
+# Introduction
 
 This project was created to alleviate the pain of hand-editing the hex dump and to explore contemporary JavaScript syntax along with API supported by the modern Chrome browser (other browsers not tested - pull requests fixing possible issues are welcomed!).
 
 Should you notice any errors, want to add missing range, update the description, etc. feel free to open an issue or submit a pull request.
 
 It should be rather easy task to modify the source code to support any other `EEPROM` - the page is generated dynamically based on [the `bin_ranges` variable]
+
+Keep in mind, every modification you make is your own risk!
 
 # Hardware improvements
 
