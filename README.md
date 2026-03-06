@@ -34,7 +34,9 @@ The bridge is first early stage "relief" and starts to work at 2V , TVS becomes 
 The 5 diodes bridge (popular solution in the majority of multimeters) does not impact a measurement precision on uA and mA range at all.
 Additional capacitors improve readout stability.
 It is required also to improve measurement of ammeter on 20A range. There is bug in Kelvin connection originally.
-Just cut one path and add second one properly, recalibration on 20A is necessary. This is quit easy task to do.
+Just cut one path and add second one properly and make main current pathes thicker.
+The main current path originally has 25% of resistance R33 shunt! 0,0025 mOhm versus 0,01 Ohm . Voltage drop on that pathes is huge!
+Recalibration on 20A is necessary. This is quit easy task to do.
 Recalibration details are described below.
 
 ![hardware mods](doc/bridge.png)
