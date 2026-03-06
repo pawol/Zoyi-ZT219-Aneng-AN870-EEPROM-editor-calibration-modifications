@@ -8,7 +8,7 @@ Ostrzeżenia
 Działanie wstępne:
 - odłączyć sondy od multimetra
 - założyć zworę JP2
-- przełączyć selektor multimetra spokojnie na pomiar rezystancji (Ω)
+- przełączyć selektor multimetra spokojnie na pomiar rezystancji (Ohm)
 - gdy pojawi się napis CAL nacisnąć spokojnie 2x SELECT aby opuścić self test i przejść do kalibracji (wtedy widać narastające odczyty od 0mV)
 - gdy pojawi się napis CAL ale nie naciśniemy 2x SELECT to rozpocznie sie self test a po około minucie na LCD pojawi się Err0. Należy ponownie uruchomić procedurę.
 
@@ -77,8 +77,8 @@ Uwagi:
 Kalibracja rezystancji:
 - wybrać na selektorze pomiar rezystancji (symbol Ohm)
 - przyciskiem SELECT w pętli wybrać REZYSTANCJĘ (Napięcie -> Rezystancja -> Pojemność -> Temperatura), zapali się symbol (Ohm) na LCD
-  - rezystor 10kΩ i nacisnąć HOLD aby miernik skalibrował się na tą wartość
-  - rezystor 10MΩ i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+  - rezystor 10kOhm i nacisnąć HOLD aby miernik skalibrował się na tą wartość
+  - rezystor 10MOhm i nacisnąć HOLD aby miernik skalibrował się na tą wartość
  
   zweryfikować inne odczyty rezystancji
   po kalibracji przełączyć selektor multimetra inną wielkość którą chcemy kalibrować (np. DC V, DC mA) lub  wyłaczyć multimetr i zdjąć zworkę JP2
