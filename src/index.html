@@ -161,7 +161,7 @@
    </head>
   <body>
       <div id="main_container">
-        <h1><a href="https://github.com/pawol/Zoyi-ZT219-Aneng-AN870-EEPROM-editor">Zoyi ZT219 / Aneng AN870</a> v1.0 (forked by <a href="https://github.com/pawol">pawol</a>)</h1>
+        <h1><a href="https://github.com/pawol/Zoyi-ZT219-Aneng-AN870-EEPROM-editor-calibration-modifications">Zoyi ZT219 / Aneng AN870</a> v1.0 (forked by <a href="https://github.com/pawol">pawol</a>)</h1>
         <div class="bibliography">Sources:
             <a href="https://www.youtube.com/watch?v=Vj6b-clYTis">TheHWcave</a>
              | Kerrywong [<a href="http://www.kerrywong.com/2016/03/19/hacking-dtm0660l-based-multimeters/">1</a>]
@@ -348,9 +348,9 @@ const bin_ranges = [
         offset: 0x22,
         len: T_WORD,
         default: 0x8000,
-        description: "200mV range calibration (EEPROM address: 0x22)",
+        description: "200mV range calibration (separate for diode test) (?) (EEPROM address: 0x22)",
         proc: "num",
-        section_description: "200mV range calibration."
+        section_description: "Calibration performed on 100mV DC voltage."
     },
     {
         offset: 0x24,
@@ -382,15 +382,15 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 200μA range calibration (EEPROM address: 0x2A)",
         proc: "num",
-        section_description: "DC 200μA range calibration."
+        section_description: "Calibration performed on 100uA DC current."
     },
     {
         offset: 0x2C,
         len: T_WORD,
         default: 0x8000,
-        description: "DC 20mA range calibration (EEPROM address: 0x2C)",
+        description: "DC 200mA range calibration (EEPROM address: 0x2C)",
         proc: "num",
-        section_description: "DC 20mA range calibration."
+        section_description: "Calibration performed on 100mA DC current."
     },
     {
         offset: 0x2E,
@@ -398,7 +398,7 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 20A range calibration (EEPROM address: 0x2E)",
         proc: "num",
-        section_description: "DC 20A range calibration."
+        section_description: "Calibration performed on 1A DC current."
     },
     // 0x30..0x34 - unknown
     {
@@ -498,17 +498,17 @@ const bin_ranges = [
         offset: 0x60,
         len: T_WORD,
         default: 0x8000,
-        description: "10kΩ calibration (EEPROM address: 0x60)",
+        description: "20kΩ (?)range calibration (EEPROM address: 0x60)",
         proc: "num",
-        section_description: "10kΩ resistor calibration."
+        section_description: "10kΩ (?) resistor calibration."
     },
     {
         offset: 0x62,
         len: T_WORD,
         default: 0x8000,
-        description: "10MΩ calibration (EEPROM address: 0x62)",
+        description: "20MΩ (?) range calibration (EEPROM address: 0x62)",
         proc: "num",
-        section_description: "10MΩ resistor calibration."
+        section_description: "10MΩ (?) resistor calibration."
     },
     // 0x64..0x66 - unknown
     {
@@ -525,25 +525,25 @@ const bin_ranges = [
         offset: 0x70,
         len: T_WORD,
         default: 0x8000,
-        description: "500nF calibration (EEPROM address: 0x70)",
+        description: "1000nF (?) range calibration (EEPROM address: 0x70)",
         proc: "num",
-        section_description: "500nF capacitor calibration."
+        section_description: "Calibration performed by 100nF (?) capacitor."
     },
     {
         offset: 0x74,
         len: T_WORD,
         default: 0x8000,
-        description: "50μF calibration (EEPROM address: 0x74)",
+        description: "100μF (?) range calibration (EEPROM address: 0x74)",
         proc: "num",
-        section_description: "50μF capacitor calibration."
+        section_description: "Calibration performed by 10uF (?) capacitor."
     },
     {
         offset: 0x76,
         len: T_WORD,
         default: 0x8000,
-        description: "50mF calibration (EEPROM address: 0x76)",
+        description: "10mF (?) range calibration (EEPROM address: 0x76)",
         proc: "num",
-        section_description: "50mF capacitor calibration."
+        section_description: "Calibration performed by 1mF (?) capacitor."
     },
     {
         offset: 0x78,
@@ -572,7 +572,7 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 200mV range calibration (EEPROM address: 0xE8)",
         proc: "num",
-        section_description: "DC 200mV range calibration."
+        section_description: "Calibration performed on 100mV DC voltage."
     },
     {
         offset: 0xEA,
@@ -580,7 +580,7 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 2V range calibration (EEPROM address: 0xEA)",
         proc: "num",
-        section_description: "DC 2V range calibration."
+        section_description: "Calibration performed on 1V DC voltage."
     },
     {
         offset: 0xEC,
@@ -588,7 +588,7 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 20V range calibration (EEPROM address: 0xEC)",
         proc: "num",
-        section_description: "DC 20V range calibration."
+        section_description: "Calibration performed on 10V DC voltage."
     },
     {
         offset: 0xEE,
@@ -596,7 +596,7 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 200V range calibration (EEPROM address: 0xEE)",
         proc: "num",
-        section_description: "DC 200V range calibration."
+        section_description: "Calibration performed on 100V DC voltage."
     },
 
     {
@@ -605,7 +605,7 @@ const bin_ranges = [
         default: 0x8000,
         description: "DC 1000V range calibration (EEPROM address: 0xF0)",
         proc: "num",
-        section_description: "DC 1000V range calibration."
+        section_description: "Calibration performed on 1000V DC voltage."
     },
     // 0xF2..0xF8 - unknown
     {
