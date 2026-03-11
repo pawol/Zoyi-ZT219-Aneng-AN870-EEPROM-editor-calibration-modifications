@@ -71,8 +71,8 @@ We need to reprogram popular 24c02 eeprom, the clip is extremally comfortable to
 
 [Aneng AN870/Zoyi ZT219 schematic diagram](doc/Zoyi_zt219_Aneng_an870_v3.1_schematic.pdf)
 
-[datasheet 1](doc/DTM0660_datasheet.pdf)
+[datasheet 1 DTM0660L](doc/DTM0660_datasheet.pdf)
 
-[datasheet 2](doc/DTM0660_datasheet_auto-translated.pdf)
+[datasheet 2 DTM0660L](doc/DTM0660_datasheet_auto-translated.pdf)
 
-[datasheet 3](doc/DS-HY12P65_EN.pdf)
+[datasheet HY12P65](doc/DS-HY12P65_EN.pdf)
