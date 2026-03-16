@@ -29,7 +29,7 @@ Look at the original
 
 I suggest to introduce some hardware modifications.
 
-1st modification is to add additional bridge of 5x diodes 1N4007 (or M7 diodes) pararelly to the existing transil 6,8V to ensure better protection of 1 ohm/0.2W
+1st modification is to add additional bridge of 5x diodes 1N4007 (or M7 diodes) paralelly to the existing transil 6,8V to ensure better protection of 1 ohm/0.2W
 shunt in case of accidential connection of ammeter (200mA range) directly into 230V AC socket. 
 Transil is cheap and... nothing more. 6,8V makes that shunt resitor 1 ohm/0.2W has to bear 10x more power than in case of bridge.
 The bridge is first early stage "relief" and starts to work at 2V , TVS becomes 2nd stage 6,8V protection.
