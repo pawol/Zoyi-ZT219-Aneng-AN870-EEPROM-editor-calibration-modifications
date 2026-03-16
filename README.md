@@ -1,7 +1,7 @@
 # Zoyi ZT219 / Aneng AN870 EEPROM Editor and HW improvements
 
 Zoyi ZT219 / Aneng AN870 EEPROM Editor written in client-side in a single HTML page, fully offline.
-A few HW improvements pointed.
+A few HW improvements pointed also.
 
 
 You can download [offline eeprom editor](src/index.html)
@@ -16,9 +16,7 @@ An example of dumped eeprom
 
 # Introduction
 
-This project was created to alleviate the pain of hand-editing the hex dump and to explore contemporary JavaScript syntax along with API supported by the modern Chrome browser (other browsers not tested - pull requests fixing possible issues are welcomed!).
-
-Should you notice any errors, want to add missing range, update the description, etc. feel free to open an issue or submit a pull request.
+This project was created to avoid the pain of hex dump hand editing.
 
 It should be rather easy task to modify the source code to support any other `EEPROM` - the page is generated dynamically based on [the `bin_ranges` variable]
 
