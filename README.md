@@ -47,7 +47,7 @@ It is required also to improve measurement of ammeter on 20A range. There is bug
 Just cut one path and add second one properly and make main current pathes thicker.
 The main current path has originally 25% of resistance R33 shunt! 0,0025 mOhm versus 0,01 Ohm.
 The main current path is originally significiant and unstable part of R33 shunt!
-Voltage drop on that pathes is huge! The high current readings drift on the 20 A range.
+Voltage drop on that path is huge! The high current readings drift on the 20 A range.
 Recalibration on 20A is necessary. This is quit easy task to do.
 
 Recalibration details are described below.
